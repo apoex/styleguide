@@ -18,3 +18,9 @@ AllCops:
 ```
 Certain things like `TargetRubyVersion` are best kept in `.rubocop.yml` for each
 app.
+
+When you run `rubocop` it will download and create a file for each of these
+inheritances. We've found it best to check these files in to git.
+
+Because having them ignored by git and fetched on demand did not work out of the
+box with code climate.
