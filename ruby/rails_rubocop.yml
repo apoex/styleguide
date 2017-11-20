@@ -1,0 +1,17 @@
+AllCops:
+  Include:
+    - '**/config.ru'
+    - '**/Gemfile'
+    - '**/Rakefile'
+  Exclude:
+    - 'bin/*'
+    - 'config/**/*'
+    - 'db/migrate/*'
+    - 'db/schema.rb'
+    - 'spec/fixtures/**/*'
+    - 'spec/spec_helper.rb'
+    - 'spec/rails_helper.rb'
+    - 'tmp/**/*'
+
+Rails:
+  Enabled: true
