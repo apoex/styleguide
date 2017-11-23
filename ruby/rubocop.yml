@@ -29,6 +29,10 @@ Metrics/LineLength:
 # Specs - be more lenient on length checks and block styles
 ################################################################################
 
+Metrics/LineLength:
+  Exclude:
+  - spec/**/*
+
 Metrics/ModuleLength:
   Exclude:
   - spec/**/*
