@@ -13,14 +13,56 @@ AllCops:
 Metrics/LineLength:
   Max: 120
 
+Metrics/ModuleLength:
+  Enabled: false
+
+Metrics/ClassLength:
+  Enabled: false
+
+Metrics/MethodLength:
+  Max: 15
+
+Metrics/AbcSize:
+  Max: 20
+
 ################################################################################
 # Style
 ################################################################################
 
+Layout/AlignHash:
+  EnforcedHashRocketStyle: table
+  EnforcedColonStyle: table
 
+Layout/AlignParameters:
+  EnforcedStyle: with_fixed_indentation
+
+Layout/CaseIndentation:
+  IndentOneStep: true
+
+Layout/DotPosition:
+  EnforcedStyle: leading
+
+Layout/EndAlignment:
+  EnforcedStyleAlignWith: variable
+
+Layout/ExtraSpacing:
+  AllowForAlignment: true
+  ForceEqualSignAlignment: true
+
+Layout/IndentArray:
+  EnforcedStyle: consistent
+
+Layout/IndentHash:
+  EnforcedStyle: consistent
+
+Layout/MultilineMethodCallBraceLayout:
+  EnforcedStyle: new_line
+
+Layout/MultilineMethodDefinitionBraceLayout:
+  EnforcedStyle: new_line
 
 ################################################################################
-# Performance
+# performance
 ################################################################################
 
 
@@ -28,10 +70,6 @@ Metrics/LineLength:
 ################################################################################
 # Specs - be more lenient on length checks and block styles
 ################################################################################
-
-Metrics/LineLength:
-  Exclude:
-  - spec/**/*
 
 Metrics/ModuleLength:
   Exclude:
