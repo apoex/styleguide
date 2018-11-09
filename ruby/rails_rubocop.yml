@@ -16,3 +16,10 @@ AllCops:
 
 Rails:
   Enabled: true
+
+
+Rails/Date:
+  EnforcedStyle: strict
+
+Rails/TimeZone:
+  EnforcedStyle: strict
