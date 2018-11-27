@@ -64,6 +64,30 @@ Layout/MultilineMethodDefinitionBraceLayout:
 Layout/SpaceInsideHashLiteralBraces:
   EnforcedStyle: compact
 
+Style/Alias:
+  EnforcedStyle: prefer_alias_method
+
+Style/AsciiComments:
+  Enabled: false
+
+Style/AutoResourceCleanup:
+  Enabled: true
+
+Style/BlockDelimiters:
+  EnforcedStyle: braces_for_chaining
+
+Style/CollectionMethods:
+  Enabled: true
+
+Style/EmptyMethod:
+  EnforcedStyle: expanded
+
+Style/IpAddresses:
+  Enabled: true
+
+Style/MethodCalledOnDoEndBlock:
+  Enabled: true
+
 ################################################################################
 # performance
 ################################################################################
