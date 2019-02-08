@@ -88,6 +88,45 @@ Style/IpAddresses:
 Style/MethodCalledOnDoEndBlock:
   Enabled: true
 
+Style/MultilineBlockChain:
+  Enabled: false
+
+Style/OptionHash:
+  Enabled: true
+
+Style/PercentQLiterals:
+  EnforcedStyle: upper_case_q
+
+Style/PerlBackrefs:
+  Enabled: false
+
+Style/ReturnNil:
+  Enabled: true
+
+Style/Send:
+  Enabled: true
+
+Style/StringHashKeys:
+  Enabled: true
+
+Style/StringLiterals:
+  EnforcedStyle: double_quotes
+
+Style/StringLiteralsInInterpolation:
+  EnforcedStyle: double_quotes
+
+Style/TrailingCommaInArguments:
+  EnforcedStyleForMultiline: comma
+
+Style/TrailingCommaInArrayLiteral:
+  EnforcedStyleForMultiline: comma
+
+Style/TrailingCommaInHashLiteral:
+  EnforcedStyleForMultiline: comma
+
+Style/TrailingUnderscoreVariable:
+  Enabled: false
+
 ################################################################################
 # performance
 ################################################################################
