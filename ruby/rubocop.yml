@@ -1,3 +1,6 @@
+# When auto applying all the rules you can use
+# git commit -m --author "Team Extern <ti-extern@apoex.se>"
+
 ################################################################################
 # AllCops
 ################################################################################
