@@ -37,3 +37,10 @@ AllCops:
 
 Rails:
   Enabled: true
+
+Rails/UnknownEnv:
+  Environments:
+    - development
+    - production
+    - sandbox
+    - test
