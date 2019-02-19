@@ -1,0 +1,38 @@
+RSpec/AnyInstance:
+  Enabled: true
+
+RSpec/AroundBlock:
+  Enabled: true
+
+RSpec/BeforeAfterAll:
+  Enabled: true
+
+RSpec/DescribedClass:
+  Enabled: true
+  EnforcedStyle: described_class
+
+RSpec/ExpectChange:
+  Enabled: true
+  EnforcedStyle: block
+
+RSpec/ImplicitExpect:
+  Enabled: true
+  EnforcedStyle: is_expected
+
+RSpec/LetSetup:
+  Enabled: false
+
+RSpec/MultipleExpectations:
+  Enabled: true
+  Max: 20
+  AggregateFailuresByDefault: true
+
+RSpec/NamedSubject:
+  Enabled: false
+
+RSpec/ReturnFromStub:
+  Enabled: true
+  EnforcedStyle: block
+
+RSpec/VerifiedDoubles:
+  Enabled: true
