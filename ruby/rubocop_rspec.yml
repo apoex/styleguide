@@ -36,3 +36,6 @@ RSpec/ReturnFromStub:
 
 RSpec/VerifiedDoubles:
   Enabled: true
+  
+RSpec/ScatteredSetup
+  Enabled: true
