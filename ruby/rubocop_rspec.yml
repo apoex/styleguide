@@ -24,7 +24,7 @@ RSpec/LetSetup:
 
 RSpec/MultipleExpectations:
   Enabled: true
-  Max: 20
+  Max: 100
   AggregateFailuresByDefault: true
 
 RSpec/NamedSubject:
@@ -36,6 +36,6 @@ RSpec/ReturnFromStub:
 
 RSpec/VerifiedDoubles:
   Enabled: true
-  
-RSpec/ScatteredSetup
+
+RSpec/ScatteredSetup:
   Enabled: true
