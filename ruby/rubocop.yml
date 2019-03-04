@@ -140,6 +140,9 @@ Style/TrailingUnderscoreVariable:
 Lint/ReturnInVoidContext:
   Enabled: false
 
+Lint/Void:
+  Enabled: false
+
 
 ################################################################################
 # Specs - be more lenient on length checks and block styles
