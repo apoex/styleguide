@@ -130,6 +130,9 @@ Style/TrailingCommaInHashLiteral:
 Style/TrailingUnderscoreVariable:
   Enabled: false
 
+Style/Lambda:
+  EnforcedStyle: literal
+
 ################################################################################
 # performance
 ################################################################################
