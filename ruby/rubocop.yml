@@ -166,7 +166,3 @@ Metrics/MethodLength:
 Style/ClassAndModuleChildren:
   Exclude:
   - spec/**/*
-
-Style/BlockDelimiters:
-  Exclude:
-  - spec/**/*
