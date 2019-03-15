@@ -39,3 +39,6 @@ RSpec/VerifiedDoubles:
 
 RSpec/ScatteredSetup:
   Enabled: true
+
+RSpec/NestedGroups:
+  Max: 5
