@@ -10,34 +10,12 @@ AllCops:
 # Metrics
 ################################################################################
 
-Metrics/BlockLength:
-  Exclude:
-  - spec/**/*
-
-Style/ClassAndModuleChildren:
-  Exclude:
-  - spec/**/*
-
 Metrics/LineLength:
-  Exclude:
-  - spec/**/*
   Max: 120
-
-Metrics/ModuleLength:
-  Exclude:
-  - spec/**/*
-
-Metrics/MethodLength:
-  Exclude:
-  - spec/**/*
 
 ################################################################################
 # Style
 ################################################################################
-
-Style/BlockDelimiters:
-  Exclude:
-  - spec/**/*
 
 ################################################################################
 # Performance
