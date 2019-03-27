@@ -1,0 +1,151 @@
+# This is the configuration used to check the rubocop source code.
+
+require: rubocop-rspec
+
+################################################################################
+# Layout
+#
+
+# === DISABLE ===
+#
+# - https://rubocop.readthedocs.io/en/latest/cops_layout/#layoutmultilinemethodcallindentation
+#
+# Why? We use ".and change { ... }".
+#
+Layout/MultilineMethodCallIndentation:
+  Exclude:
+    - '**/*'
+
+
+################################################################################
+# Lint
+#
+
+# === DISABLE ===
+#
+# - https://rubocop.readthedocs.io/en/latest/cops_lint/#lintambiguousblockassociation
+#
+# Why? We use "expect { ... }.to".
+#
+Lint/AmbiguousBlockAssociation:
+  Exclude:
+    - '**/*'
+
+
+################################################################################
+# Metrics
+#
+
+# === OVERRIDE ===
+#
+# - https://rubocop.readthedocs.io/en/latest/cops_metrics/#metricsabcsize
+#
+# Why? Helper methods could be more complex
+#
+Metrics/AbcSize:
+  Max: 20
+
+# === DISABLE ===
+#
+# - https://rubocop.readthedocs.io/en/latest/cops_metrics/#metricsblocklength
+#
+# Why? Some of these files need to have long blocks.
+#
+Metrics/BlockLength:
+  Exclude:
+    - '**/*'
+
+# === OVERRIDE ===
+#
+# - https://rubocop.readthedocs.io/en/latest/cops_metrics/#metricsmethodlength
+#
+# Why? We allow long helper methods.
+#
+Metrics/MethodLength:
+  Max: 40
+
+# === EXCLUDE ===
+#
+# - https://rubocop.readthedocs.io/en/latest/cops_metrics/#metricsmodulelength
+#
+# Why? We don't want modules in spec files.
+#
+Metrics/ModuleLength:
+  Max: 0
+  Exclude:
+    - support/**/*
+
+
+################################################################################
+# Style
+#
+
+# === DISABLE ===
+#
+# - https://rubocop.readthedocs.io/en/latest/cops_style/#styleblockdelimiters
+#
+# Why? We use "expect { ... }.to".
+#
+Style/BlockDelimiters:
+  Exclude:
+    - '**/*'
+
+# === DISABLE ===
+#
+# - https://rubocop.readthedocs.io/en/latest/cops_style/#stylenumericliterals
+#
+# Why? We have a lot of long numeric identifiers.
+#
+Style/NumericLiterals:
+  Exclude:
+    - '**/*'
+
+
+################################################################################
+# RSpec
+#
+
+# === DISABLE ===
+#
+# - https://rubocop-rspec.readthedocs.io/en/latest/cops_rspec/#rspecexamplelength
+#
+# Why? We have long examples.
+#
+RSpec/ExampleLength:
+  Enabled: false
+
+# === DISABLE ===
+#
+# - https://rubocop-rspec.readthedocs.io/en/latest/cops_rspec/#rspecmultipleexpectations
+#
+# Why? We have many expectations in a single example.
+#
+RSpec/MultipleExpectations:
+  Enabled: false
+
+# === OVERRIDE ===
+#
+# - https://rubocop-rspec.readthedocs.io/en/latest/cops_rspec/#rspecnestedgroups
+#
+# Why? We just allow more nesting.
+#
+RSpec/NestedGroups:
+  Max: 5
+
+
+################################################################################
+# Capybara
+#
+
+# === ENABLE ===
+#
+# - https://rubocop-rspec.readthedocs.io/en/latest/cops_capybara/#capybarafeaturemethods
+#
+# Why? We like it this way.
+#
+Capybara/FeatureMethods:
+  EnabledMethods:
+    - scenario
+    - xscenario
+    - feature
+    - xeature

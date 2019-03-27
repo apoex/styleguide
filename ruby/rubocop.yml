@@ -1,22 +1,93 @@
 ################################################################################
 # AllCops
-################################################################################
 
 AllCops:
   DisplayCopNames: true
   DisplayStyleGuide: true
 
+
+################################################################################
+# Layout
+#
+
+# === OVERRIDE ===
+#
+# - https://rubocop.readthedocs.io/en/latest/cops_layout/#layoutalignhash
+#
+# Why? We use table align style.
+#
+Layout/AlignHash:
+  EnforcedColonStyle: table
+  EnforcedHashRocketStyle: table
+
+
 ################################################################################
 # Metrics
-################################################################################
+#
 
+# === OVERRIDE ===
+#
+# - https://rubocop.readthedocs.io/en/latest/cops_metrics/#metricsabcsize
+#
+# Why? We just allow more complex methods.
+#
+Metrics/AbcSize:
+  Max: 20
+
+# === OVERRIDE ===
+#
+# - https://rubocop.readthedocs.io/en/latest/cops_metrics/#metricslinelength
+#
+# Why? We just allow longer lines.
+#
 Metrics/LineLength:
   Max: 120
 
-################################################################################
-# Style
-################################################################################
+# === OVERRIDE ===
+#
+# - https://rubocop.readthedocs.io/en/latest/cops_metrics/#metricsmethodlength
+#
+# Why? We just allow longer methods.
+#
+Metrics/MethodLength:
+  Max: 15
+  CountComments: false
+
 
 ################################################################################
-# Performance
-################################################################################
+# Style
+#
+
+# === OVERRIDE ===
+#
+# - https://rubocop.readthedocs.io/en/latest/cops_style/#styleasciicomments
+#
+# Why? We use å, ä, ö. And notation.
+#
+Style/AsciiComments:
+  AllowedChars:
+    - '@'
+    - 'å'
+    - 'ä'
+    - 'ö'
+    - 'Å'
+    - 'Ä'
+    - 'Ö'
+
+# === OVERRIDE ===
+#
+# - https://rubocop.readthedocs.io/en/latest/cops_style/#styletrailingcommainarrayliteral
+#
+# Why? Smaller git diff on change.
+#
+Style/TrailingCommaInArrayLiteral:
+  EnforcedStyleForMultiline: 'comma'
+
+# === OVERRIDE ===
+#
+# - https://rubocop.readthedocs.io/en/latest/cops_style/#styletrailingcommainhashliteral
+#
+# Why? Smaller git diff on change.
+#
+Style/TrailingCommaInHashLiteral:
+  EnforcedStyleForMultiline: 'comma'
