@@ -24,6 +24,8 @@ Metrics/ClassLength:
 
 Metrics/MethodLength:
   Max: 15
+  Exclude:
+  - spec/**/*
 
 Metrics/AbcSize:
   Max: 20
@@ -52,10 +54,10 @@ Layout/ExtraSpacing:
   AllowForAlignment: true
   ForceEqualSignAlignment: true
 
-Layout/IndentArray:
+Layout/IndentFirstArrayElement:
   EnforcedStyle: consistent
 
-Layout/IndentHash:
+Layout/IndentFirstHashElement:
   EnforcedStyle: consistent
 
 Layout/MultilineMethodCallBraceLayout:
@@ -140,6 +142,7 @@ Style/Lambda:
 ################################################################################
 # lint
 ################################################################################
+
 Lint/ReturnInVoidContext:
   Enabled: false
 
@@ -151,15 +154,7 @@ Lint/Void:
 # Specs - be more lenient on length checks and block styles
 ################################################################################
 
-Metrics/ModuleLength:
-  Exclude:
-  - spec/**/*
-
 Metrics/BlockLength:
-  Exclude:
-  - spec/**/*
-
-Metrics/MethodLength:
   Exclude:
   - spec/**/*
 
