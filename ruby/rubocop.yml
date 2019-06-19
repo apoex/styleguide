@@ -101,3 +101,13 @@ Style/TrailingCommaInHashLiteral:
 #
 Style/ModuleFunction:
   Enabled: false
+
+# === OVERRIDE ===
+#
+# - https://rubocop.readthedocs.io/en/latest/cops_style/#stylesymbolarray
+#
+# Why? Annoying when writing nested args for methods like ActiveRecords `includes`
+#      e.g. changing from `%i[a b c]` to `[:a, :b, c: [:d, :f]]`
+#
+Style/SymbolArray:
+  Enabled: false
