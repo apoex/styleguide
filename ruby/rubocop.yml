@@ -84,6 +84,9 @@ Style/BlockDelimiters:
 Style/CollectionMethods:
   Enabled: true
 
+Style/Documentation:
+  Enabled: false
+
 Style/EmptyMethod:
   EnforcedStyle: expanded
 
