@@ -76,6 +76,24 @@ Style/AsciiComments:
 
 # === OVERRIDE ===
 #
+# - https://rubocop.readthedocs.io/en/latest/cops_style/#stylelambda
+#
+# Why? We prefer:
+# scope :my_scope, ->(var) {
+#   where(attribute: var)
+# }
+#
+# over
+#
+# scope :my_scope, lambda { |var|
+#   where(attribute: var)
+# }
+#
+Style/Lambda:
+  EnforcedStyle: literal
+
+# === OVERRIDE ===
+#
 # - https://rubocop.readthedocs.io/en/latest/cops_style/#styletrailingcommainarrayliteral
 #
 # Why? Smaller git diff on change.
