@@ -40,7 +40,7 @@ Rails:
 
 
 Rails/Date:
-  EnforcedStyle: strict
+  EnforcedStyle: flexible
 
 Rails/TimeZone:
   EnforcedStyle: strict
