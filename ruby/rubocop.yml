@@ -120,9 +120,6 @@ Style/StringHashKeys:
 Style/StringLiterals:
   EnforcedStyle: double_quotes
 
-Style/TrailingCommaInLiteral:
-  Enabled: false
-
 Style/StringLiteralsInInterpolation:
   EnforcedStyle: double_quotes
 
