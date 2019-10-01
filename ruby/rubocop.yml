@@ -25,7 +25,7 @@ Metrics/ClassLength:
 Metrics/MethodLength:
   Max: 15
   Exclude:
-  - spec/**/*
+    - spec/**/*
 
 Metrics/AbcSize:
   Max: 20
@@ -120,6 +120,9 @@ Style/StringHashKeys:
 Style/StringLiterals:
   EnforcedStyle: double_quotes
 
+Style/TrailingCommaInLiteral:
+  Enabled: false
+
 Style/StringLiteralsInInterpolation:
   EnforcedStyle: double_quotes
 
@@ -152,15 +155,14 @@ Lint/ReturnInVoidContext:
 Lint/Void:
   Enabled: false
 
-
 ################################################################################
 # Specs - be more lenient on length checks and block styles
 ################################################################################
 
 Metrics/BlockLength:
   Exclude:
-  - spec/**/*
+    - spec/**/*
 
 Style/ClassAndModuleChildren:
   Exclude:
-  - spec/**/*
+    - spec/**/*
