@@ -1,49 +1,48 @@
 AllCops:
   Include:
-    - '**/*.rb'
-    - '**/*.gemfile'
-    - '**/*.gemspec'
-    - '**/*.jbuilder'
-    - '**/*.rake'
-    - '**/*.ru'
-    - '**/*.spec'
-    - '**/*.thor'
-    - '**/*.watchr'
-    - '**/.irbrc'
-    - '**/.pryrc'
-    - '**/Appraisals'
-    - '**/Berksfile'
-    - '**/Brewfile'
-    - '**/Buildfile'
-    - '**/Capfile'
-    - '**/Cheffile'
-    - '**/Gemfile'
-    - '**/Guardfile'
-    - '**/Rakefile'
-    - '**/Thorfile'
+    - "**/*.rb"
+    - "**/*.gemfile"
+    - "**/*.gemspec"
+    - "**/*.jbuilder"
+    - "**/*.rake"
+    - "**/*.ru"
+    - "**/*.spec"
+    - "**/*.thor"
+    - "**/*.watchr"
+    - "**/.irbrc"
+    - "**/.pryrc"
+    - "**/Appraisals"
+    - "**/Berksfile"
+    - "**/Brewfile"
+    - "**/Buildfile"
+    - "**/Capfile"
+    - "**/Cheffile"
+    - "**/Gemfile"
+    - "**/Guardfile"
+    - "**/Rakefile"
+    - "**/Thorfile"
   Exclude:
-    - 'bin/*'
-    - 'config/**/*'
-    - 'db/migrate/*'
-    - 'db/schema.rb'
-    - 'node_modules/**/*'
-    - 'spec/examples.txt'
-    - 'spec/fixtures/**/*'
-    - 'spec/spec_helper.rb'
-    - 'spec/rails_helper.rb'
-    - 'tmp/**/*'
-    - 'vendor/**/*'
-    - '.git/**/*'
+    - "bin/*"
+    - "config/**/*"
+    - "db/migrate/*"
+    - "db/schema.rb"
+    - "node_modules/**/*"
+    - "spec/examples.txt"
+    - "spec/fixtures/**/*"
+    - "spec/spec_helper.rb"
+    - "spec/rails_helper.rb"
+    - "tmp/**/*"
+    - "vendor/**/*"
+    - ".git/**/*"
 
 Rails:
   Enabled: true
-
 
 Rails/Date:
   EnforcedStyle: flexible
 
 Rails/TimeZone:
-  EnforcedStyle: strict
+  EnforcedStyle: flexible
 
 Rails/UnknownEnv:
   Environments:
