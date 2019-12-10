@@ -16,7 +16,7 @@ AllCops:
 #
 # Why? We use table align style.
 #
-Layout/HashAlignment:
+Layout/AlignHash:
   EnforcedColonStyle: table
   EnforcedHashRocketStyle: table
 
