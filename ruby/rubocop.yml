@@ -34,11 +34,11 @@ Metrics/AbcSize:
 # Style
 ################################################################################
 
-Layout/HashAlignment:
+Layout/AlignHash:
   EnforcedHashRocketStyle: table
   EnforcedColonStyle: table
 
-Layout/ParameterAlignment:
+Layout/AlignParameters:
   EnforcedStyle: with_fixed_indentation
 
 Layout/CaseIndentation:
@@ -54,10 +54,10 @@ Layout/ExtraSpacing:
   AllowForAlignment: true
   ForceEqualSignAlignment: true
 
-Layout/FirstArrayElementIndentation:
+Layout/IndentFirstArrayElement:
   EnforcedStyle: consistent
 
-Layout/FirstHashElementIndentation:
+Layout/IndentFirstHashElement:
   EnforcedStyle: consistent
 
 Layout/MultilineMethodCallBraceLayout:
