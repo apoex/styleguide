@@ -20,6 +20,14 @@ Layout/HashAlignment:
   EnforcedColonStyle: table
   EnforcedHashRocketStyle: table
 
+# === OVERRIDE ===
+#
+# - https://rubocop.readthedocs.io/en/latest/cops_layout/#layoutlinelength
+#
+# Why? We just allow longer lines.
+#
+Layout/LineLength:
+  Max: 120
 
 ################################################################################
 # Metrics
@@ -33,15 +41,6 @@ Layout/HashAlignment:
 #
 Metrics/AbcSize:
   Max: 20
-
-# === OVERRIDE ===
-#
-# - https://rubocop.readthedocs.io/en/latest/cops_metrics/#metricslinelength
-#
-# Why? We just allow longer lines.
-#
-Metrics/LineLength:
-  Max: 120
 
 # === OVERRIDE ===
 #
