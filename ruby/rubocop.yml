@@ -121,7 +121,7 @@ Style/ModuleFunction:
 
 # === OVERRIDE ===
 #
-# - https://rubocop.readthedocs.io/en/latest/cops_naming/
+# - https://rubocop.readthedocs.io/en/latest/cops_naming/#namingrescuedexceptionsvariablename
 #
 # Why? Enforcing specific name rules on local variables leads to unnecessary noise. We should spend time on the things that matter
 #
