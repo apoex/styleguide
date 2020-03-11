@@ -73,6 +73,33 @@ Style/AsciiComments:
     - 'Ä'
     - 'Ö'
 
+# === ENABLE ===
+#
+# Not enablabed by default.
+#
+# Read more: https://github.com/rubocop-hq/rubocop/issues/7731#issuecomment-588090599
+#
+Style/HashEachMethods:
+  Enabled: true
+
+# === ENABLE ===
+#
+# Not enablabed by default.
+#
+# Read more: https://github.com/rubocop-hq/rubocop/issues/7731#issuecomment-588090599
+#
+Style/HashTransformKeys:
+  Enabled: true
+
+# === ENABLE ===
+#
+# Not enablabed by default.
+#
+# Read more: https://github.com/rubocop-hq/rubocop/issues/7731#issuecomment-588090599
+#
+Style/HashTransformValues:
+  Enabled: true
+
 # === OVERRIDE ===
 #
 # - https://rubocop.readthedocs.io/en/latest/cops_style/#stylelambda
