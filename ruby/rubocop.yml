@@ -98,7 +98,7 @@ Style/HashTransformKeys:
 # Read more: https://github.com/rubocop-hq/rubocop/issues/7731#issuecomment-588090599
 #
 Style/HashTransformValues:
-  Enabled: true
+  Enabled: false
 
 # === OVERRIDE ===
 #
@@ -154,4 +154,3 @@ Style/ModuleFunction:
 #
 Naming/RescuedExceptionsVariableName:
   Enabled: false
-  
