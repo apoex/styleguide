@@ -52,7 +52,7 @@ Layout/EndAlignment:
 
 Layout/ExtraSpacing:
   AllowForAlignment: true
-  ForceEqualSignAlignment: true
+  ForceEqualSignAlignment: false
 
 Layout/IndentFirstArrayElement:
   EnforcedStyle: consistent
