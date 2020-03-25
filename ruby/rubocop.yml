@@ -138,6 +138,9 @@ Style/TrailingUnderscoreVariable:
 Style/Lambda:
   EnforcedStyle: literal
 
+Bundler/OrderedGems:
+  Enabled: false
+
 ################################################################################
 # performance
 ################################################################################
