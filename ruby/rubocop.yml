@@ -13,9 +13,6 @@ AllCops:
 # Metrics
 ################################################################################
 
-Metrics/LineLength:
-  Max: 120
-
 Metrics/ModuleLength:
   Enabled: false
 
@@ -60,6 +57,9 @@ Layout/FirstArrayElementIndentation:
 Layout/FirstHashElementIndentation:
   EnforcedStyle: consistent
 
+Layout/LineLength:
+  Max: 120
+
 Layout/MultilineMethodCallBraceLayout:
   EnforcedStyle: new_line
 
@@ -90,6 +90,15 @@ Style/Documentation:
 Style/EmptyMethod:
   EnforcedStyle: expanded
 
+Style/HashEachMethods:
+  Enabled: true
+
+Style/HashTransformKeys:
+  Enabled: true
+
+Style/HashTransformValues:
+  Enabled: true
+  
 Style/IpAddresses:
   Enabled: true
 
