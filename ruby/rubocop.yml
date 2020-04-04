@@ -30,6 +30,28 @@ Layout/LineLength:
   Max: 120
 
 ################################################################################
+# Lint
+#
+
+# === ENABLE ===
+#
+# - https://rubocop.readthedocs.io/en/latest/cops_lint/#lintraiseexception
+#
+# Why? Prefer "raise" over "fail".
+#
+Lint/RaiseException:
+  Enabled: true
+
+# === ENABLE ===
+#
+# - https://rubocop.readthedocs.io/en/latest/cops_lint/#lintstructnewoverride
+#
+# Why? Prevent unexpected overrides of the Struct built-in methods.
+#
+Lint/StructNewOverride:
+  Enabled: true
+
+################################################################################
 # Metrics
 #
 
