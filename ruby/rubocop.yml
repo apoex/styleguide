@@ -164,6 +164,10 @@ Lint/ReturnInVoidContext:
 Lint/Void:
   Enabled: false
 
+Lint/AmbiguousBlockAssociation:
+  Exclude:
+    - "spec/**/*"
+
 ################################################################################
 # Specs - be more lenient on length checks and block styles
 ################################################################################
