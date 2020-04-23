@@ -106,6 +106,15 @@ Style/AsciiComments:
 
 # === ENABLE ===
 #
+# - https://rubocop.readthedocs.io/en/stable/cops_style/#styleexponentialnotation
+#
+# Why? Default is pending, gives warning.
+#
+Style/ExponentialNotation:
+  Enabled: true
+
+# === ENABLE ===
+#
 # Not enablabed by default.
 #
 # Read more: https://github.com/rubocop-hq/rubocop/issues/7731#issuecomment-588090599
