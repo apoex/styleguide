@@ -29,6 +29,15 @@ Layout/HashAlignment:
 Layout/LineLength:
   Max: 120
 
+# === ENABLE ===
+#
+# - https://rubocop.readthedocs.io/en/stable/cops_layout/#layoutspacearoundmethodcalloperator
+#
+# Why? Default is pending, gives warning.
+#
+Layout/SpaceAroundMethodCallOperator:
+  Enabled: true
+
 ################################################################################
 # Lint
 #
