@@ -10,6 +10,15 @@ AllCops:
 # Layout
 #
 
+# === ENABLE ===
+#
+# - https://docs.rubocop.org/en/latest/cops_layout/#layoutemptylinesaroundattributeaccessor
+#
+# Why? Easier to read code.
+#
+Layout/EmptyLinesAroundAttributeAccessor:
+  Enabled: true
+
 # === OVERRIDE ===
 #
 # - https://rubocop.readthedocs.io/en/latest/cops_layout/#layoutalignhash
@@ -157,6 +166,15 @@ Style/HashTransformValues:
 #
 Style/Lambda:
   EnforcedStyle: literal
+
+# === OVERRIDE ===
+#
+# - https://docs.rubocop.org/en/latest/cops_style/#styleslicingwithrange
+#
+# Why? Use newer feature.
+#
+Style/SlicingWithRange:
+  Enabled: true
 
 # === OVERRIDE ===
 #
