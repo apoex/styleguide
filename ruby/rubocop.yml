@@ -9,10 +9,10 @@ AllCops:
 ################################################################################
 # Layout
 #
+# https://docs.rubocop.org/en/latest/cops_layout/
+#
 
 # === ENABLE ===
-#
-# - https://docs.rubocop.org/en/latest/cops_layout/#layoutemptylinesaroundattributeaccessor
 #
 # Why? Easier to read code.
 #
@@ -20,8 +20,6 @@ Layout/EmptyLinesAroundAttributeAccessor:
   Enabled: true
 
 # === OVERRIDE ===
-#
-# - https://rubocop.readthedocs.io/en/latest/cops_layout/#layoutalignhash
 #
 # Why? We use table align style.
 #
@@ -31,16 +29,12 @@ Layout/HashAlignment:
 
 # === OVERRIDE ===
 #
-# - https://rubocop.readthedocs.io/en/latest/cops_layout/#layoutlinelength
-#
 # Why? We just allow longer lines.
 #
 Layout/LineLength:
   Max: 120
 
 # === ENABLE ===
-#
-# - https://rubocop.readthedocs.io/en/stable/cops_layout/#layoutspacearoundmethodcalloperator
 #
 # Why? Default is pending, gives warning.
 #
@@ -50,10 +44,17 @@ Layout/SpaceAroundMethodCallOperator:
 ################################################################################
 # Lint
 #
+# https://docs.rubocop.org/en/latest/cops_lint/
+#
 
 # === ENABLE ===
 #
-# - https://rubocop.readthedocs.io/en/latest/cops_lint/#lintraiseexception
+# Why? Prefer "raise" over "fail".
+#
+Lint/DeprecatedOpenSSLConstant:
+  Enabled: true
+
+# === ENABLE ===
 #
 # Why? Prefer "raise" over "fail".
 #
@@ -61,8 +62,6 @@ Lint/RaiseException:
   Enabled: true
 
 # === ENABLE ===
-#
-# - https://rubocop.readthedocs.io/en/latest/cops_lint/#lintstructnewoverride
 #
 # Why? Prevent unexpected overrides of the Struct built-in methods.
 #
@@ -72,10 +71,10 @@ Lint/StructNewOverride:
 ################################################################################
 # Metrics
 #
+# https://docs.rubocop.org/en/latest/cops_metrics/
+#
 
 # === OVERRIDE ===
-#
-# - https://rubocop.readthedocs.io/en/latest/cops_metrics/#metricsabcsize
 #
 # Why? We just allow more complex methods.
 #
@@ -83,8 +82,6 @@ Metrics/AbcSize:
   Max: 20
 
 # === OVERRIDE ===
-#
-# - https://rubocop.readthedocs.io/en/latest/cops_metrics/#metricsmethodlength
 #
 # Why? We just allow longer methods.
 #
@@ -96,10 +93,10 @@ Metrics/MethodLength:
 ################################################################################
 # Style
 #
+# https://docs.rubocop.org/en/latest/cops_style/
+#
 
 # === OVERRIDE ===
-#
-# - https://rubocop.readthedocs.io/en/latest/cops_style/#styleasciicomments
 #
 # Why? We use å, ä, ö. And notation.
 #
@@ -114,8 +111,6 @@ Style/AsciiComments:
     - 'Ö'
 
 # === ENABLE ===
-#
-# - https://rubocop.readthedocs.io/en/stable/cops_style/#styleexponentialnotation
 #
 # Why? Default is pending, gives warning.
 #
@@ -140,7 +135,7 @@ Style/HashEachMethods:
 Style/HashTransformKeys:
   Enabled: true
 
-# === ENABLE ===
+# === DISABLE ===
 #
 # Not enablabed by default.
 #
@@ -150,8 +145,6 @@ Style/HashTransformValues:
   Enabled: false
 
 # === OVERRIDE ===
-#
-# - https://rubocop.readthedocs.io/en/latest/cops_style/#stylelambda
 #
 # Why? We prefer:
 # scope :my_scope, ->(var) {
@@ -167,9 +160,7 @@ Style/HashTransformValues:
 Style/Lambda:
   EnforcedStyle: literal
 
-# === OVERRIDE ===
-#
-# - https://docs.rubocop.org/en/latest/cops_style/#styleslicingwithrange
+# === ENABLE ===
 #
 # Why? Use newer feature.
 #
@@ -178,8 +169,6 @@ Style/SlicingWithRange:
 
 # === OVERRIDE ===
 #
-# - https://rubocop.readthedocs.io/en/latest/cops_style/#styletrailingcommainarrayliteral
-#
 # Why? Smaller git diff on change.
 #
 Style/TrailingCommaInArrayLiteral:
@@ -187,16 +176,12 @@ Style/TrailingCommaInArrayLiteral:
 
 # === OVERRIDE ===
 #
-# - https://rubocop.readthedocs.io/en/latest/cops_style/#styletrailingcommainhashliteral
-#
 # Why? Smaller git diff on change.
 #
 Style/TrailingCommaInHashLiteral:
   EnforcedStyleForMultiline: 'comma'
 
-# === OVERRIDE ===
-#
-# - https://rubocop.readthedocs.io/en/latest/cops_style/#stylemodulefunction
+# === DISABLE ===
 #
 # Why? `extend self` and `module_function` are not the same
 #      More info: https://github.com/rubocop-hq/ruby-style-guide/issues/556
@@ -204,9 +189,7 @@ Style/TrailingCommaInHashLiteral:
 Style/ModuleFunction:
   Enabled: false
 
-# === OVERRIDE ===
-#
-# - https://rubocop.readthedocs.io/en/latest/cops_naming/#namingrescuedexceptionsvariablename
+# === DISABLE ===
 #
 # Why? Enforcing specific name rules on local variables leads to unnecessary noise. We should spend time on the things that matter
 #
