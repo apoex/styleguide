@@ -63,6 +63,13 @@ Lint/RaiseException:
 
 # === ENABLE ===
 #
+# Why? Default is pending, gives warning.
+#
+Lint/MixedRegexpCaptureTypes:
+  Enabled: true
+
+# === ENABLE ===
+#
 # Why? Prevent unexpected overrides of the Struct built-in methods.
 #
 Lint/StructNewOverride:
@@ -174,6 +181,28 @@ Style/HashTransformValues:
 Style/Lambda:
   EnforcedStyle: literal
 
+# === DISABLE ===
+#
+# Why? `extend self` and `module_function` are not the same
+#      More info: https://github.com/rubocop-hq/ruby-style-guide/issues/556
+#
+Style/ModuleFunction:
+  Enabled: false
+
+# === ENABLE ===
+#
+# Why? Default is pending, gives warning.
+#
+Style/RedundantRegexpCharacterClass:
+  Enabled: true
+
+# === ENABLE ===
+#
+# Why? Default is pending, gives warning.
+#
+Style/RedundantRegexpEscape:
+  Enabled: true
+
 # === ENABLE ===
 #
 # Why? Use newer feature.
@@ -195,10 +224,3 @@ Style/TrailingCommaInArrayLiteral:
 Style/TrailingCommaInHashLiteral:
   EnforcedStyleForMultiline: 'comma'
 
-# === DISABLE ===
-#
-# Why? `extend self` and `module_function` are not the same
-#      More info: https://github.com/rubocop-hq/ruby-style-guide/issues/556
-#
-Style/ModuleFunction:
-  Enabled: false
