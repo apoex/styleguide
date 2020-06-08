@@ -9,7 +9,7 @@ AllCops:
 ################################################################################
 # Layout
 #
-# https://docs.rubocop.org/en/latest/cops_layout/
+# https://docs.rubocop.org/rubocop/cops_layout.html
 #
 
 # === ENABLE ===
@@ -44,7 +44,7 @@ Layout/SpaceAroundMethodCallOperator:
 ################################################################################
 # Lint
 #
-# https://docs.rubocop.org/en/latest/cops_lint/
+# https://docs.rubocop.org/rubocop/cops_lint.html
 #
 
 # === ENABLE ===
@@ -71,7 +71,7 @@ Lint/StructNewOverride:
 ################################################################################
 # Metrics
 #
-# https://docs.rubocop.org/en/latest/cops_metrics/
+# https://docs.rubocop.org/rubocop/cops_metrics.html
 #
 
 # === OVERRIDE ===
@@ -91,9 +91,23 @@ Metrics/MethodLength:
 
 
 ################################################################################
+# Naming
+#
+# https://docs.rubocop.org/rubocop/cops_naming.html
+#
+
+# === DISABLE ===
+#
+# Why? Enforcing specific name rules on local variables leads to unnecessary noise. We should spend time on the things that matter
+#
+Naming/RescuedExceptionsVariableName:
+  Enabled: false
+
+
+################################################################################
 # Style
 #
-# https://docs.rubocop.org/en/latest/cops_style/
+# https://docs.rubocop.org/rubocop/cops_style.html
 #
 
 # === OVERRIDE ===
@@ -187,11 +201,4 @@ Style/TrailingCommaInHashLiteral:
 #      More info: https://github.com/rubocop-hq/ruby-style-guide/issues/556
 #
 Style/ModuleFunction:
-  Enabled: false
-
-# === DISABLE ===
-#
-# Why? Enforcing specific name rules on local variables leads to unnecessary noise. We should spend time on the things that matter
-#
-Naming/RescuedExceptionsVariableName:
   Enabled: false
