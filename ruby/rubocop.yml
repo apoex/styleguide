@@ -193,6 +193,13 @@ Style/ModuleFunction:
 #
 # Why? Default is pending, gives warning.
 #
+Style/RedundantFetchBlock:
+  Enabled: true
+
+# === ENABLE ===
+#
+# Why? Default is pending, gives warning.
+#
 Style/RedundantRegexpCharacterClass:
   Enabled: true
 
