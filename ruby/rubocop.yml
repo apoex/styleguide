@@ -75,6 +75,13 @@ Lint/MixedRegexpCaptureTypes:
 Lint/StructNewOverride:
   Enabled: true
 
+# === DISABLE ===
+#
+# Why? Be explicit about controller actions.
+#
+Lint/UselessMethodDefinition:
+  Enabled: false
+
 ################################################################################
 # Metrics
 #
