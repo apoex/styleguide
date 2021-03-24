@@ -21,14 +21,6 @@ Layout/EmptyLinesAroundAttributeAccessor:
 
 # === OVERRIDE ===
 #
-# Why? We use table align style.
-#
-Layout/HashAlignment:
-  EnforcedColonStyle: table
-  EnforcedHashRocketStyle: table
-
-# === OVERRIDE ===
-#
 # Why? We just allow longer lines.
 #
 Layout/LineLength:
