@@ -33,6 +33,25 @@ Layout/LineLength:
 Layout/SpaceAroundMethodCallOperator:
   Enabled: true
 
+# === OVERRIDE ===
+#
+# Why? Use space within blocks, but not within hashes.
+#
+Layout/SpaceInsideBlockBraces:
+  Enabled: true
+  EnforcedStyle: space
+  EnforcedStyleForEmptyBraces: no_space
+  SpaceBeforeBlockParameters: true
+
+# === OVERRIDE ===
+#
+# Why? Use space within blocks, but not within hashes.
+#
+Layout/SpaceInsideHashLiteralBraces:
+  Enabled: true
+  EnforcedStyle: no_space
+  EnforcedStyleForEmptyBraces: no_space
+
 ################################################################################
 # Lint
 #
