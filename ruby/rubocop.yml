@@ -235,6 +235,13 @@ Style/RedundantRegexpEscape:
 Style/SlicingWithRange:
   Enabled: true
 
+# === DISABLE ===
+#
+# Why? Do not enforce single quotes, we will go towards double quotes.
+#
+Style/StringLiterals:
+  Enabled: false
+
 # === OVERRIDE ===
 #
 # Why? Smaller git diff on change.
