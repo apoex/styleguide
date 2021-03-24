@@ -21,14 +21,6 @@ Layout/EmptyLinesAroundAttributeAccessor:
 
 # === OVERRIDE ===
 #
-# Why? We use table align style.
-#
-Layout/HashAlignment:
-  EnforcedColonStyle: table
-  EnforcedHashRocketStyle: table
-
-# === OVERRIDE ===
-#
 # Why? We just allow longer lines.
 #
 Layout/LineLength:
@@ -40,6 +32,25 @@ Layout/LineLength:
 #
 Layout/SpaceAroundMethodCallOperator:
   Enabled: true
+
+# === OVERRIDE ===
+#
+# Why? Use space within blocks, but not within hashes.
+#
+Layout/SpaceInsideBlockBraces:
+  Enabled: true
+  EnforcedStyle: space
+  EnforcedStyleForEmptyBraces: no_space
+  SpaceBeforeBlockParameters: true
+
+# === OVERRIDE ===
+#
+# Why? Use space within blocks, but not within hashes.
+#
+Layout/SpaceInsideHashLiteralBraces:
+  Enabled: true
+  EnforcedStyle: no_space
+  EnforcedStyleForEmptyBraces: no_space
 
 ################################################################################
 # Lint
@@ -223,6 +234,13 @@ Style/RedundantRegexpEscape:
 #
 Style/SlicingWithRange:
   Enabled: true
+
+# === DISABLE ===
+#
+# Why? Do not enforce single quotes, we will go towards double quotes.
+#
+Style/StringLiterals:
+  Enabled: false
 
 # === OVERRIDE ===
 #
