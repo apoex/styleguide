@@ -22,6 +22,13 @@ Layout/HashAlignment:
 
 # === OVERRIDE ===
 #
+# Why? We prefer snake_case.
+#
+Naming/VariableNumber:
+  EnforcedStyle: snake_case
+
+# === OVERRIDE ===
+#
 # Why? We prefer brackets.
 #
 Style/SymbolArray:
