@@ -139,12 +139,12 @@ RSpec/NestedGroups:
 
 # === ENABLE ===
 #
-# - https://docs.rubocop.org/rubocop-rspec/cops_rspec/capybara.html#rspeccapybarafeaturemethods
+# - https://docs.rubocop.org/rubocop-rspec/cops_rspec.html#rspecdialect
 #
 # Why? We like it this way.
 #
-RSpec/Capybara/FeatureMethods:
-  EnabledMethods:
+RSpec/Dialect:
+  Enabled:
     - scenario
     - xscenario
     - feature
